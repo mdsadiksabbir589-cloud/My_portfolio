@@ -1,26 +1,24 @@
 export default function handler(req, res) {
-  const projects = [
+  res.status(200).json([
     {
       id: 1,
       title: "AI-Powered Motorcycle Rider Safety Analysis System",
-      description: "A computer vision based system that analyzes rider behavior and detects risky actions in real-time using AI.",
+      description: "Computer vision system to detect risky rider behavior in real-time.",
     },
     {
       id: 2,
       title: "Digital Image Processing Suite for Medical Analysis",
-      description: "A system that processes and enhances medical images using filtering, segmentation, and feature extraction techniques.",
+      description: "Image enhancement, segmentation, and feature extraction system.",
     },
     {
       id: 3,
       title: "Machine Learning-Based Cancer Diagnosis Predictor",
-      description: "A predictive model that classifies cancer diagnosis using supervised machine learning algorithms.",
+      description: "Supervised ML model for cancer classification.",
     },
     {
       id: 4,
       title: "Autonomous AI Agent for Task Automation",
-      description: "An intelligent AI agent capable of decision-making and automating real-world tasks using modern AI pipelines.",
+      description: "AI agent capable of decision-making and automation.",
     }
-  ];
-
-  res.status(200).json(projects);
+  ]);
 }
